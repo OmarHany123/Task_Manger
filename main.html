@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <input type="time" id="taskStartTime">
+            <input type="number" id="taskDuration" placeholder="Duration (minutes)">
+        </div>
+        <div class="button-group">
+            <button id="info" onclick="addTask()"><i class="fas fa-plus"></i> Add Task</button>
+            <button id="update" onclick="updateTask()"><i class="fas fa-edit"></i> Update Task</button>
+            <button id="danger" onclick="removeTask()"><i class="fas fa-trash"></i> Remove Task</button>
+            <button id="remov" onclick="removeAllTasks()"><i class="fas fa-trash-alt"></i> Remove All Tasks</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
